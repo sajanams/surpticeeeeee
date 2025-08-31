@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <style>
+    body {
+      background: #0f060b;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding: 20px;
+      animation: fadeIn 2s;
+    }
+    h1 {
+      color: white;
+      text-shadow: 2px 2px 8px black;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin: 20px auto;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      transform: scale(0);
+      opacity: 0;
+      animation: popUp 0.8s forwards;
+    }
+    /* Apply delay to each image */
+    .gallery img:nth-child(1) { animation-delay: 0.5s; }
+    .gallery img:nth-child(2) { animation-delay: 1.2s; }
+    .gallery img:nth-child(3) { animation-delay: 2s; }
+    .gallery img:nth-child(4) { animation-delay: 2.8s; }
+    .gallery img:nth-child(5) { animation-delay: 3.6s; }
+    .gallery img:nth-child(6) { animation-delay: 4.4s; }
+    .gallery img:nth-child(7) { animation-delay: 5s; }
+    .gallery img:nth-child(8) { animation-delay: 6.2s; }
+    
+
+    @keyframes popUp {
+      0% { transform: scale(0); opacity: 0; }
+      70% { transform: scale(1.1); opacity: 1; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    a {
+      text-decoration: none;
+      background: #ff69b4;
+      color: rgb(236, 225, 225);
+      padding: 12px 25px;
+      border-radius: 12px;
+      font-size: 18px;
+      box-shadow: 0 0 12px rgba(255,105,180,0.8);
+      display: inline-block;
+      margin-top: 25px;
+    }
+    a:hover {
+      background: #c20a8b;
+      box-shadow: 0 0 20px rgba(255,20,147,1);
+    }
+
+    @keyframes fadeIn { from {opacity:0;} to {opacity:1;} }
+  </style>
+</head>
+<body>
+  <h1>I Love Youuuuu🤗😚</h1>
+  <div class="gallery">
+    <img src="c:\Users\Admin\OneDrive\Documents\weee.jpg" alt="">
+    <img src="c:\Users\Admin\OneDrive\Documents\ussss.jpg" alt="">
+    <img src="c:\Users\Admin\OneDrive\Documents\wewe.jpg" alt="">
+    <img src="c:\Users\Admin\OneDrive\Documents\wewewee.jpg" alt="">
+    <img src="c:\Users\Admin\OneDrive\Documents\weeeee.jpg" alt="">
+    <img src="c:\Users\Admin\OneDrive\Documents\wee.jpg" alt="">
+    <img src="c:\Users\Admin\OneDrive\Documents\happyy.jpg" alt="">
+    <img src="c:\Users\Admin\OneDrive\Documents\lovee.jpg" alt="">
+  </div>
+  <a href="page4.html">Just one more please😉😁</a>
+</body>
+</html>
